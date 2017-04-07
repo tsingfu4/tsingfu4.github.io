@@ -1,9 +1,16 @@
 <html>
 <head>
-  <title>天猪部落阁</title>
-  <script>
-
-  </script>
+  <tile> TEST </tile>
+  document.domain = "github.com"; 
+  <iframe src="http://github.com/atian25/blog/issues" id="i">  </iframe> 
+  
+  <script> 
+    document.getElementById('i').onload = function(){ 
+       var d = document.getElementById('i').contentWindow; 
+       alert("the cookie of bbb/2.htm:\n" + d.document.cookie);
+       alert("the cookie of aaa/1.htm:\n" + document.cookie);
+    }; 
+  </script> 
 </head>
 <body>Hello World</body>
 </html>
