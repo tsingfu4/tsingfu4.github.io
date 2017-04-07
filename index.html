@@ -1,10 +1,12 @@
 <html>
 <head>
   <tile> TEST </tile>
-  document.domain = "github.com"; 
-  <iframe src="http://github.com/atian25/blog/issues" id="i">  </iframe> 
+  
+  <iframe src="https://github.com/atian25/blog/issues" id="i">  </iframe> 
   
   <script> 
+    document.domain = "github.com"
+    document.cookie="usera2=hulk;path=/aaa";
     document.getElementById('i').onload = function(){ 
        var d = document.getElementById('i').contentWindow; 
        alert("the cookie of bbb/2.htm:\n" + d.document.cookie);
